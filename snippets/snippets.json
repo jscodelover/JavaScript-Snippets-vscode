@@ -1,1 +1,87 @@
-{}
+{
+  "console log": {
+    "prefix": "clog",
+    "body": ["console.log(${1:obj});"],
+    "description": "Display the logging information"
+  },
+  "console log key-value pair": {
+    "prefix": "cl",
+    "body": ["console.log('${1:obj}:',${2:obj});"],
+    "description": "Display the logging information in key value pair"
+  },
+  "console clear": {
+    "prefix": "cclr",
+    "body": ["console.clear();"],
+    "description": "Clear the console"
+  },
+  "console warn": {
+    "prefix": "cw",
+    "body": ["console.warn(${1:obj});"],
+    "description": "Outputs a warning message"
+  },
+  "console table": {
+    "prefix": "ct",
+    "body": ["console.table(${1:obj});"],
+    "description": "Displays tabular data as a table"
+  },
+  "console assert": {
+    "prefix": "cass",
+    "body": ["console.assert(${1:expression}, ${2:obj});"],
+    "description": "Writes an error message to the console if the expression is false"
+  },
+  "console count": {
+    "prefix": "cc",
+    "body": ["console.count(${1:label});"],
+    "description": "Keep count of how many times your code is read "
+  },
+  "console countreset": {
+    "prefix": "ccr",
+    "body": ["console.countReset(${1:label});"],
+    "description": "Resets the counter"
+  },
+  "console dir": {
+    "prefix": "cdir",
+    "body": ["console.dir(${1:obj}, {colors: ${2:true}, depth: ${3:null}});"],
+    "description": "Display all the properties of an object"
+  },
+  "console error": {
+    "prefix": "cerr",
+    "body": ["console.error(${1:obj});"],
+    "description": "Outputs an error message"
+  },
+  "console group": {
+    "prefix": "cgrp",
+    "body": ["console.group(${1:label});"],
+    "description": "Creates a new inline group in the Web Console"
+  },
+  "console groupend": {
+    "prefix": "cend",
+    "body": ["console.groupEnd();"],
+    "description": "Exits the current inline group in the Web Console"
+  },
+  "console info": {
+    "prefix": "cin",
+    "body": ["console.info(${1:obj})"],
+    "description": "Outputs an informational message with a icon"
+  },
+  "console time": {
+    "prefix": "ctym",
+    "body": ["console.time(${1:label});"],
+    "description": "Starts a timer you can use to track how long an operation takes"
+  },
+  "console timeEnd": {
+    "prefix": "ctend",
+    "body": ["console.timeEnd(${1:label});"],
+    "description": "Stops a timer that was previously started"
+  },
+  "console timeLog": {
+    "prefix": "ctlog",
+    "body": ["console.timeLog(${1:label});"],
+    "description": "Logs the current value of a timer that was previously started"
+  },
+  "console trace": {
+    "prefix": "ctr",
+    "body": ["console.trace(${1:label});"],
+    "description": "Display the trace which represents how the code ended up at a certain point"
+  }
+}
