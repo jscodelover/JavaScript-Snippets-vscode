@@ -334,5 +334,15 @@
     "prefix": "ci",
     "body": ["clearInterval(${1:variableName})"],
     "description": "Clear Interval"
+  },
+  "Array Destructure": {
+    "prefix": "ad",
+    "body": ["const [${1:element1}, ${2:element2}] = ${3:array}"],
+    "description": "Array Destructure"
+  },
+  "Object Destructure": {
+    "prefix": "od",
+    "body": ["const {${1:property1}, ${1:property2}} = ${3:object}"],
+    "description": "Object Destructure"
   }
 }
