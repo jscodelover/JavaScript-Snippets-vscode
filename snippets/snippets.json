@@ -132,5 +132,44 @@
       "}"
     ],
     "description": "Switch Statment"
+  },
+  "fetch with catch": {
+    "prefix": "fetchc",
+    "body": [
+      "fetch('${1:url}')",
+      "  .then(response => {",
+      "    if (response.status === 200) {",
+      "      return response.json();",
+      "    } else {",
+      "      throw new Error('Something went wrong on api server!');",
+      "    }",
+      "  })",
+      "  .then(data => {",
+      "    console.debug(data);",
+      "  }).catch(error => {",
+      "    console.error(error);",
+      "  });"
+    ],
+    "description": "Fetch with Catch"
+  },
+  "Fetch Request": {
+    "prefix": "fetchreq",
+    "body": [
+      "fetch('${1:url}')",
+      "  .then(res => res.json())",
+      "  .then(data => console.log(data));"
+    ],
+    "description": "Fetch Request"
+  },
+  "Async/Await Fetch": {
+    "prefix": "asyncfetch",
+    "body": [
+      "const request = async ($1) => {",
+      "    const response = await fetch('${2:url}');",
+      "    const data = await response.json();",
+      "    console.log(data);",
+      "}"
+    ],
+    "description": "Fetch Async/Await"
   }
 }
