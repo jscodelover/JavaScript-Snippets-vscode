@@ -171,5 +171,24 @@
       "}"
     ],
     "description": "Fetch Async/Await"
+  },
+  "try and catch": {
+    "prefix": "tc",
+    "body": ["try {", "  $1", "}catch (err){", "  $2", "}"],
+    "description": "try and catch"
+  },
+  "try, catch and finally": {
+    "prefix": "tcf",
+    "body": [
+      "try {",
+      "  $1",
+      "}catch (err){",
+      "  $2",
+      "}",
+      "finally{",
+      "  $3",
+      "}"
+    ],
+    "description": "try, catch and finally"
   }
 }
