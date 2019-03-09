@@ -83,5 +83,20 @@
     "prefix": "ctr",
     "body": ["console.trace(${1:label});"],
     "description": "Display the trace which represents how the code ended up at a certain point"
+  },
+  "named function": {
+    "prefix": "nfn",
+    "body": ["function ${1:functionName}($2){", "  $3", "}"],
+    "description": "Named Function"
+  },
+  "anonymous function": {
+    "prefix": "fn",
+    "body": ["function($1){", "  $2", "}"],
+    "description": "Anonymous function"
+  },
+  "arrow function": {
+    "prefix": "afn",
+    "body": ["const ${1:functionName} = ($2) => {", "  $3", "}"],
+    "description": "Arrow function"
   }
 }
