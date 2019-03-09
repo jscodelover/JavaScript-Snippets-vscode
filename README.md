@@ -24,3 +24,22 @@ Below is a list of all available snippets.
 `reduce`→ create array method`iterable.(forEach,map,filter,find,every,some)(item => { })`
 
 ### Conditional Operator
+
+`i` Basic if statment `if(conditon){ }`
+`ife` If-else statment `if(conditon){ } else{ }`
+`ei` Else if statment `else if(condition){ }`
+`swt` Switch Statment
+
+```
+   switch(expression){
+   case condition:  //
+                    break;
+    default: //
+   }
+```
+
+### Loops
+
+`fin` For in loop `for(const key in source){ }`
+`fof` For of loop `for(cont key of source){ }`
+`wl` while loop `while(condition){ }`
