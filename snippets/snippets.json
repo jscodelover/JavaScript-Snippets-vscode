@@ -118,11 +118,21 @@
   "Array Method": {
     "prefix": "arrmth",
     "body": [
-      "${1|forEach,map,filter,reduce,some|}((${2:item}) => {",
-      "  $3",
+      "${1:iterable}.${2|forEach,map,filter,find,every,some|}((${3:item}) => {",
+      "  $4",
       "})"
     ],
     "description": "Array Method"
+  },
+  "Reduce": {
+    "prefix": "reduce",
+    "body": [
+      "${1:iterable}.reduce((${2:acc}, ${3:item}) => {",
+      "  ${5}",
+      "}${4:, initial})",
+      ""
+    ],
+    "description": "Array Method Reduce"
   },
   "Basic If Statement": {
     "prefix": "ifc",
