@@ -98,5 +98,14 @@
     "prefix": "afn",
     "body": ["const ${1:functionName} = ($2) => {", "  $3", "}"],
     "description": "Arrow function"
+  },
+  "Array Method": {
+    "prefix": "arrmth",
+    "body": [
+      "${1|forEach,map,filter,reduce,some|}((${2:item}) => {",
+      "  $3",
+      "})"
+    ],
+    "description": "Array Method"
   }
 }
