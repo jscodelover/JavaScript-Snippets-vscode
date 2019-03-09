@@ -34,7 +34,7 @@
     "body": ["console.count(${1:label});"],
     "description": "Keep count of how many times your code is read "
   },
-  "console countreset": {
+  "console countReset": {
     "prefix": "ccr",
     "body": ["console.countReset(${1:label});"],
     "description": "Resets the counter"
@@ -54,7 +54,7 @@
     "body": ["console.group(${1:label});"],
     "description": "Creates a new inline group in the Web Console"
   },
-  "console groupend": {
+  "console groupEnd": {
     "prefix": "cend",
     "body": ["console.groupEnd();"],
     "description": "Exits the current inline group in the Web Console"
@@ -70,12 +70,12 @@
     "description": "Starts a timer you can use to track how long an operation takes"
   },
   "console timeEnd": {
-    "prefix": "ctend",
+    "prefix": "cte",
     "body": ["console.timeEnd(${1:label});"],
     "description": "Stops a timer that was previously started"
   },
   "console timeLog": {
-    "prefix": "ctlog",
+    "prefix": "ctg",
     "body": ["console.timeLog(${1:label});"],
     "description": "Logs the current value of a timer that was previously started"
   },
