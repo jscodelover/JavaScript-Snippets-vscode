@@ -153,7 +153,7 @@
     "description": "Fetch with Catch"
   },
   "Fetch Request": {
-    "prefix": "fetchreq",
+    "prefix": "fetch",
     "body": [
       "fetch('${1:url}')",
       "  .then(res => res.json())",
@@ -171,6 +171,22 @@
       "}"
     ],
     "description": "Fetch Async/Await"
+  },
+  "Async/Await Fetch with catch": {
+    "prefix": "asyncfetchc",
+    "body": [
+      "const request = async ($1) => {",
+      "  const response = await fetch('${2:url}');",
+      "  if(response.status === 200){",
+      "    const data = await response.json();",
+      "    console.log(data);",
+      "  }",
+      "  else{",
+      "    console.log(\"error\");",
+      "  }",
+      "}"
+    ],
+    "description": "Async/Await Fetch with catch"
   },
   "try and catch": {
     "prefix": "tc",
