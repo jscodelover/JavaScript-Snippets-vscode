@@ -344,5 +344,52 @@
     "prefix": "od",
     "body": ["const {${1:property1}, ${1:property2}} = ${3:object}"],
     "description": "Object Destructure"
+  },
+  "export ": {
+    "prefix": "e",
+    "body": ["export ${1:member}"],
+    "description": "export $1"
+  },
+  "export default": {
+    "prefix": "ed",
+    "body": ["export default ${1:member}"],
+    "description": "export default"
+  },
+  "export default fn": {
+    "prefix": "edf",
+    "body": [
+      "export default function ${1:functionName} (${2:arguments}) {\n\t$3\n}"
+    ],
+    "description": "export default fn"
+  },
+  "export const": {
+    "prefix": "ec",
+    "body": ["export const ${1:member} = ${2:value}"],
+    "description": "export const"
+  },
+  "import": {
+    "prefix": "im",
+    "body": ["import ${1:*} from '${2:module}'"],
+    "description": "import"
+  },
+  "import as": {
+    "prefix": "ima",
+    "body": ["import ${1:*} as ${2:name} from '${3:module}'"],
+    "description": "import as"
+  },
+  "import with destructure": {
+    "prefix": "imd",
+    "body": ["import { $1 } from '${2:module}'"],
+    "description": "import with destructure"
+  },
+  "require": {
+    "prefix": "rq",
+    "body": ["const ${1:module} = require(${1:module});"],
+    "description": "require"
+  },
+  "module export": {
+    "prefix": "me",
+    "body": ["module.exports = {};"],
+    "description": "module export"
   }
 }
