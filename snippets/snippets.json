@@ -99,6 +99,21 @@
     "body": ["const ${1:functionName} = ($2) => {", "  $3", "}"],
     "description": "Arrow function"
   },
+  "Function Apply": {
+    "prefix": "apply",
+    "body": ["${1:functionName}.apply(${2:this}, ${3:arguments})"],
+    "description": "Function Apply"
+  },
+  "Function Call": {
+    "prefix": "call",
+    "body": ["${1:fn}.call(${2:this}, ${3:arguments})"],
+    "description": "Function Call"
+  },
+  "Function Bind": {
+    "prefix": "bind",
+    "body": ["${1:fn}.bind(${2:this}, ${3:arguments})"],
+    "description": "Function Bind"
+  },
   "IIFE": {
     "prefix": "iife",
     "body": ["(function ($1) {", "    $2", "})();"],
