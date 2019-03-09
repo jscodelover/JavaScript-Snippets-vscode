@@ -79,21 +79,6 @@
     "body": ["else if (${1:condition}) {", "  $2", "}"],
     "description": "Else-If Statement"
   },
-  "For In Loop": {
-    "prefix": "fin",
-    "body": ["for (const ${1:key} in ${2:source}) {", "  $3", "}"],
-    "description": "For In Loop"
-  },
-  "For Of Loop": {
-    "prefix": "fof",
-    "body": ["for (const ${1:key} of ${2:source}) {", "  $3", "}"],
-    "description": "For Of Loop"
-  },
-  "While Loop": {
-    "prefix": "wl",
-    "body": ["while (${1:condition}) {", "  $2", "}"],
-    "description": "While Loop"
-  },
   "switch statment": {
     "prefix": "swt",
     "body": [
@@ -108,6 +93,21 @@
       "}"
     ],
     "description": "Switch Statment"
+  },
+  "For In Loop": {
+    "prefix": "fin",
+    "body": ["for (const ${1:key} in ${2:source}) {", "  $3", "}"],
+    "description": "For In Loop"
+  },
+  "For Of Loop": {
+    "prefix": "fof",
+    "body": ["for (const ${1:key} of ${2:source}) {", "  $3", "}"],
+    "description": "For Of Loop"
+  },
+  "While Loop": {
+    "prefix": "wl",
+    "body": ["while (${1:condition}) {", "  $2", "}"],
+    "description": "While Loop"
   },
   "fetch with catch": {
     "prefix": "fetchc",
