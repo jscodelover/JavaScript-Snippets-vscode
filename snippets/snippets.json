@@ -99,6 +99,22 @@
     "body": ["const ${1:functionName} = ($2) => {", "  $3", "}"],
     "description": "Arrow function"
   },
+  "IIFE": {
+    "prefix": "iife",
+    "body": ["(function ($1) {", "    $2", "})();"],
+    "description": "IIFE"
+  },
+  "IIFE with result": {
+    "prefix": "iifer",
+    "body": [
+      "const ${1:result} = (function ($1) {",
+      "    $2",
+      "  return ;",
+      "})();",
+      "console.log(${1:result});"
+    ],
+    "description": "IIFE with result"
+  },
   "Array Method": {
     "prefix": "arrmth",
     "body": [
