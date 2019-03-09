@@ -20,7 +20,7 @@
     "description": "Outputs a warning message"
   },
   "console table": {
-    "prefix": "ct",
+    "prefix": "ctb",
     "body": ["console.table(${1:obj});"],
     "description": "Displays tabular data as a table"
   },
@@ -276,5 +276,48 @@
       "}"
     ],
     "description": "Async/Await Axios"
+  },
+  "Set TimeOut": {
+    "prefix": "st",
+    "body": ["setTimeout(() => {", "  $2", "}, ${1:delay})"],
+    "description": "Set TimeOut"
+  },
+  "Set Interval": {
+    "prefix": "si",
+    "body": ["setInterval(() => {\n\t$2\n}, ${1:intervalInms});"],
+    "description": "Set Interval"
+  },
+  "Set Immediate": {
+    "prefix": "sim",
+    "body": ["setImmediate(() => {", "  $1", "})"],
+    "description": "Set Immediate"
+  },
+  "Set Timeout with variable": {
+    "prefix": "stv",
+    "body": [
+      "const ${1:timer} = setTimeout(() => {",
+      "                    $3",
+      "                   }, ${2:delay})"
+    ],
+    "description": "Set Timeout with variable"
+  },
+  "Clear Timeout": {
+    "prefix": "ct",
+    "body": ["clearTimeout(${1:varableName});"],
+    "description": "Clear Timeout"
+  },
+  "Set Interval with variable": {
+    "prefix": "siv",
+    "body": [
+      "const ${1:variableName} = setInterval(() => {",
+      "                            $3",
+      "                          },${2:intervalTime})"
+    ],
+    "description": "Set Interval with variable"
+  },
+  "Clear Interval": {
+    "prefix": "ci",
+    "body": ["clearInterval(${1:variableName})"],
+    "description": "Clear Interval"
   }
 }
