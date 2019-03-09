@@ -206,5 +206,29 @@
       "}"
     ],
     "description": "try, catch and finally"
+  },
+  "Axios Request": {
+    "prefix": "ax",
+    "body": [
+      "axios.${1|get,post,put,delete|}('${2:url}')",
+      "  .then(res => console.log(res.data))",
+      "  .catch(err => console.log(err));"
+    ],
+    "description": "Axios Request"
+  },
+  "Async/Await Axios": {
+    "prefix": "asyncax",
+    "body": [
+      "async function ${1:functionName}() {",
+      "  try {",
+      "    const response = await axios.${2|get,post,put,delete|}('${3:url}');",
+      "    const data = await response.json();",
+      "    return data;",
+      "  } catch (error) {",
+      "    console.log(error);",
+      "  }",
+      "}"
+    ],
+    "description": "Async/Await Axios"
   }
 }
