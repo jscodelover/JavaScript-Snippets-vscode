@@ -86,5 +86,97 @@ const request = async () => {
 
 ### Exception Handling
 
-`tc` Try and Catch `try {} catch(err) {}`
-`tcf` Try, Catch and Finally `try {} catch(err) {} finally {}`
+`tc`→ Try and Catch `try {} catch(err) {}`
+`tcf`→ Try, Catch and Finally `try {} catch(err) {} finally {}`
+
+### Axios
+
+`ax`→ Axios Request for all get, post, put, delete
+
+```
+axios.(get,post,put,delete)('url')
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err));
+```
+
+`asyncax`→ Axios Request for all get, post, put, delete
+
+```
+async function functionName() {
+    try {
+      const response = await axios.(get,post,put,delete)('url');
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+}
+```
+
+### Timer
+
+`st`→ Set Timeout `setTimeout(() => {}, delay)`
+`si`→ Set Interval `setInterval(() => {}, intervalInms)`
+`sim`→ Set Immediate `setImmediate(() => {})`
+`stv`→ Set TimeOut with variable `const timer = setTimeout(() => {}, delay)`
+`ct`→ Clear Timeout `clearTimeout(variableName)`  
+`siv`→ Set Interval with variable `cont timer = setInterval(() => {}, intervalInms)`
+`ci`→ Clear Interval `clearInterval(variableName)`
+
+### Destructure
+
+`ad`→ Array Destructure `const [element1, element2] = array`
+`od`→ Object Destructure `const {property1, property2} = object`
+
+### ES6 Modules
+
+`e`→ export `export member`
+`ed`→ export default `export default member`
+`edf`→ export default named function `export default function functionName() {}`
+`ec`→ export const `export const member = value`
+`im`→ import `import * from 'module'`  
+`ima`→ import as `import * as name from 'module'`
+`imd`→ import with destructure `import { } from 'module'`  
+`rq`→ require `const module = require(module)`
+`me`→ module exports `module.exports = {}`
+
+### Class
+
+`cls`→ class
+
+```
+class name {
+    constructor() {
+    }
+}
+```
+
+`clsx`→ class with extends
+
+```
+class name extends base {
+    constructor() {
+      super();
+    }
+}
+```
+
+### Console
+
+`clog`→ console.log `console.log(obj);`
+`cl`→ console log with key value pair `console.log('obj:',obj);`
+`cclr`→ console clear `console.clear();`
+`cw`→ console warn `console.warn(obj);`
+`ctb`→ console table `console.table(obj);`
+`cass`→ console assert `console.assert(expression, obj);`
+`cc`→ console count `console.count(label);`
+`ccr`→ console countrest `console.countReset(label);`
+`cdir`→ console dir `console.dir(obj, {colors: true, depth: null});`
+`cerr`→ console error `console.error(obj);`
+`cgrp`→ console group `console.group(label);`
+`cend`→ console groupend `console.groupEnd();`
+`cin`→ console info `console.info(obj)`
+`ctym`→ console time `console.time(label);`
+`cte`→ console timeend `console.timeEnd(label);`
+`ctg`→ console timelog `console.timeLog(label);`
+`ctr`→ console trace `console.trace(label);`
