@@ -233,7 +233,7 @@
   },
   "Clear Timeout": {
     "prefix": "ct",
-    "body": ["clearTimeout(${1:varableName});"],
+    "body": ["clearTimeout(${1:variableName});"],
     "description": "Clear Timeout"
   },
   "Set Interval with variable": {
