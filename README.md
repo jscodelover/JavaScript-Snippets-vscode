@@ -11,7 +11,6 @@ Below is a list of all available snippets.
 ### Function
 
 `nfn`→ create a funtion with function keyword `function functionName () {}`
-
 `fn`→ create a anonymous function `function () {}`
 `afn`→ create a arrow function `const functionName= () => {}`
 `apply`→ create an apply funtion `functionName.apply(this,arguments)`
