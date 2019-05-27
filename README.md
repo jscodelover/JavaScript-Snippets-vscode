@@ -197,3 +197,57 @@ class name extends base {
 | `cte`   | console timeend `console.timeEnd(label);`                    |
 | `ctg`   | console timelog `console.timeLog(label);`                    |
 | `ctr`   | console trace `console.trace(label);`                        |
+
+### Jest Testing
+
+`desc`→ describe
+
+```
+describe("", () => {
+
+});
+```
+
+`test`→ test
+
+```
+test("", () => {
+
+});
+```
+
+`testo`→ test.only
+
+```
+test.only("", () => {
+
+});
+```
+
+`tests`→ test.skip
+
+```
+test.skip("", () => {
+
+});
+```
+
+`teste`→ test.each
+
+```
+test.each`[[input, expected]]`("", ({input, expected}) => {
+
+});
+```
+
+`exp`→ expect
+
+```
+expect();
+```
+
+`expas`→ expect.assertions
+
+```
+expect.assertions();
+```
