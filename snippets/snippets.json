@@ -56,12 +56,7 @@
   },
   "Reduce": {
     "prefix": "reduce",
-    "body": [
-      "${1:iterable}.reduce((${2:acc}, ${3:item}) => {",
-      "  ${5}",
-      "}${4:, initial})",
-      ""
-    ],
+    "body": ["${1:iterable}.reduce((${2:acc}, ${3:item}) => {", "  ${5}", "}${4:, initial})", ""],
     "description": "Array Method Reduce"
   },
   "Basic If Statement": {
@@ -171,16 +166,7 @@
   },
   "try, catch and finally": {
     "prefix": "tcf",
-    "body": [
-      "try {",
-      "  $1",
-      "}catch (err){",
-      "  $2",
-      "}",
-      "finally{",
-      "  $3",
-      "}"
-    ],
+    "body": ["try {", "  $1", "}catch (err){", "  $2", "}", "finally{", "  $3", "}"],
     "description": "try, catch and finally"
   },
   "Axios Request": {
@@ -272,9 +258,7 @@
   },
   "export default fn": {
     "prefix": "edf",
-    "body": [
-      "export default function ${1:functionName} (${2:arguments}) {\n\t$3\n}"
-    ],
+    "body": ["export default function ${1:functionName} (${2:arguments}) {\n\t$3\n}"],
     "description": "export default fn"
   },
   "export const": {
@@ -309,13 +293,7 @@
   },
   "class": {
     "prefix": "cls",
-    "body": [
-      "class ${1:name} {",
-      "  constructor(${2:arguments}) {",
-      "    $3",
-      "  }",
-      "}"
-    ],
+    "body": ["class ${1:name} {", "  constructor(${2:arguments}) {", "    $3", "  }", "}"],
     "description": "class"
   },
   "class with extends": {
@@ -413,5 +391,44 @@
     "prefix": "ctr",
     "body": ["console.trace(${1:label});"],
     "description": "Display the trace which represents how the code ended up at a certain point"
+  },
+  "describe": {
+    "prefix": "desc",
+    "body": ["describe(\"${1: name of test group}\", () => {", " $2", "});"],
+    "description": "creates a describe block"
+  },
+  "test": {
+    "prefix": "test",
+    "body": ["test(\"${1: should}\", () => {", " $2", "});"],
+    "description": "creates a test block"
+  },
+  "test.only": {
+    "prefix": "testo",
+    "body": ["test.only(\"${1: should}\", () => {", " $2", "});"],
+    "description": "creates a test that run only"
+  },
+  "test.skip": {
+    "prefix": "tests",
+    "body": ["test.skip(\"${1: should}\", () => {", " $2", "});"],
+    "description": "creates a test that is skipped"
+  },
+  "test.each": {
+    "prefix": "teste",
+    "body": [
+      "test.each`${1:[[input,expected]]}`('${2:should}', ({${3:input,expected}) => {",
+      "    expect(add(a, b)).toEqual(result);",
+      "});"
+    ],
+    "description": "creates an test block with different data sets"
+  },
+  "expect": {
+    "prefix": "exp",
+    "body": ["expect(${1:value to be tested});", ""],
+    "description": "when you want to test a value"
+  },
+  "expect.assertions": {
+    "prefix": "expas",
+    "body": ["expect.assertions($0);", ""],
+    "description": "expects the test to make the indicated number of assertions (useful for async)"
   }
 }
